@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-area />
+    <hero image="https://via.placeholder.com/1920x1080">
+      <div slot="title">WELCOME TO LIFE<br />AT THE PATCH</div>
+    </hero>
+    <hero>
+      <div slot="title">
+        WOLLERT'S MAGNETIC<br />
+        NEW NEIGHBOUTHOOD.<br />
+        WHERE THE DESTINATION<br />
+        IS LOVAL.
+      </div>
+      <a href="" class="hero__link">DISCOVER THE PATCH</a>
+    </hero>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderArea from '@/components/HeaderArea.vue'
+import Hero from '@/components/Hero.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HeaderArea,
+    Hero
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import 'foundation-sites/scss/foundation.scss';
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+  html, body {
+    background:#000;
+    color:#fff;
+    font-family: 'Lato', arial;
+    font-size:15px;
+  }
 </style>

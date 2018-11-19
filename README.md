@@ -1,4 +1,13 @@
-# revium
+# Revium Test
+
+Instructions to view in browser
+
+## Requirements
+
+[Yarn](https://yarnpkg.com/)
+[Node](https://nodejs.org/en/)
+
+If you dont have yarn you can replace the below commands with `npm`
 
 ## Project setup
 ```
