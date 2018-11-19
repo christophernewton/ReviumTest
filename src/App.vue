@@ -29,7 +29,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import 'foundation-sites/scss/foundation.scss';
   @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
   html, body {
     background:#000;
